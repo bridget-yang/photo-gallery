@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(255,228,225);
+}
+.gif {
+  height: 100px;
+  width: 100px;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+  padding-bottom: 0px;
+}
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+img {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+.row1 {
+  display: flex;
+  justify-content: center;
+}
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+.row3 {
+  display: flex;
+  justify-content: center;
+}
+.row4 {
+  display: flex;
+  justify-content: center;
+}
+.row5 {
+  display: flex;
+  justify-content: center;
+}
+.giffy1{
+   position: fixed;
+   bottom: 0;
+   z-index: 10;
+   animation: drive 40s infinite;
+ }
+ @keyframes drive {
+   0% {
+     left: -25%;
+   }
+   100% {
+     left: 200%;
+   }
+   /* Finish changes by here */
+   20% {
+     transform: translate(200px, 0);
+   }
+ }
+@media screen and (max-width: 500px) {
+  img {
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+  }
+  .row1 {
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .row2 {
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .row3 {
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .row4 {
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .row5 {
+   display: flex;
+   flex-wrap: wrap;
+  }
+}
